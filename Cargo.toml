@@ -8,3 +8,8 @@ resolver = "2"
 authors = ["Сырцев Вадим Игоревич <syrtcevvi@gmail.com>"]
 description = "Checkers game written with Rust and Iced"
 edition = "2024"
+
+[profile.release]
+panic = "abort"
+strip = true
+lto = true
